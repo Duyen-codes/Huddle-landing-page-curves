@@ -58,21 +58,23 @@
         </div>
       </section>
 
-      <section>
-        <div class="section-img">
-          <img src="./images/illustration-grow-together.svg" alt="" />
-        </div>
-        <div class="section-content">
-          <h2>Grow Together</h2>
-          <p>
-            Generate meaningful discussions with your audience and build a
-            strong, loyal community. Think of the insightful conversations you
-            miss out on with a feedback form.
-          </p>
-        </div>
-      </section>
+      <div class="background-wrapper-grow">
+        <section class="grow-section">
+          <div class="section-img">
+            <img src="./images/illustration-grow-together.svg" alt="" />
+          </div>
+          <div class="section-content">
+            <h2>Grow Together</h2>
+            <p>
+              Generate meaningful discussions with your audience and build a
+              strong, loyal community. Think of the insightful conversations you
+              miss out on with a feedback form.
+            </p>
+          </div>
+        </section>
+      </div>
 
-      <section>
+      <section class="flow-section">
         <div class="section-img">
           <img src="./images/illustration-flowing-conversation.svg" alt="" />
         </div>
@@ -86,84 +88,89 @@
         </div>
       </section>
 
-      <section>
-        <div class="section-img">
-          <img src="./images/illustration-your-users.svg" alt="" />
-        </div>
-        <div>
-          <h2>Your Users</h2>
-          <p>
-            It takes no time at all to integrate Huddle with your app's
-            authentication solution. This means, once signed in to your app,
-            your users can start chatting immediately.
-          </p>
-        </div>
-      </section>
-
-      <section>
+      <div class="background-wrapper-user">
+        <section class="user-section">
+          <div class="section-img">
+            <img src="./images/illustration-your-users.svg" alt="" />
+          </div>
+          <div>
+            <h2>Your Users</h2>
+            <p>
+              It takes no time at all to integrate Huddle with your app's
+              authentication solution. This means, once signed in to your app,
+              your users can start chatting immediately.
+            </p>
+          </div>
+        </section>
+      </div>
+      <section class="ready-to-build-section">
         <h2>Ready To Build Your Community?</h2>
         <button class="start-free-btn">Get Started For Free</button>
       </section>
     </main>
 
     <!-- Footer  -->
-
-    <footer>
-      <form>
-        <h2>Newsletter</h2>
-        <p>
-          To receive tips on how to grow your community, sign up to our weekly
-          newsletter. We’ll never send you spam or pass on your email address
-        </p>
-        <div class="form-control">
-          <input type="email" class="form-input error" />
-          <button type="submit" class="subscribe-btn">Subscribe</button>
-        </div>
-      </form>
-
-      <div class="footer-bottom">
-        <div>
-          <img
-            class="footer-logo-icon"
-            src="./images/logo.svg"
-            alt="Huddle.Illustration."
-          />
+    <div class="footer-wrapper">
+      <footer>
+        <div class="footer-top">
+          <h2>Newsletter</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-            nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+            To receive tips on how to grow your community, sign up to our weekly
+            newsletter. We’ll never send you spam or pass on your email address
+          </p>
+          <form class="newsletter-form">
+            <input type="email" class="form-input" />
+            <button type="submit" class="subscribe-btn">Subscribe</button>
+          </form>
+          <span class="email-error-msg">Check your email please</span>
+        </div>
+
+        <div class="footer-bottom">
+          <div>
+            <img
+              class="footer-logo-icon"
+              src="./images/logo.svg"
+              alt="Huddle.Illustration."
+            />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+              nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.
+            </p>
+          </div>
+          <ul class="footer-contacts">
+            <li>
+              <img src="./images/icon-phone.svg" alt="" />
+              <span>+1-543-123-4567 </span>
+            </li>
+            <li>
+              <img src="./images/icon-email.svg" alt="" />
+              <span> example@huddle.com</span>
+            </li>
+          </ul>
+
+          <ul class="footer-socials">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+          </ul>
+          <p class="attribution">
+            Challenge by
+            <a
+              href="https://www.frontendmentor.io?ref=challenge"
+              target="_blank"
+              >Frontend Mentor</a
+            >. Coded by
+            <a href="https://www.linkedin.com/in/hongduyen/">Duyen Nguyen</a>.
           </p>
         </div>
-        <ul class="footer-contacts">
-          <li>
-            <img src="./images/icon-phone.svg" alt="" />
-            <span>+1-543-123-4567 </span>
-          </li>
-          <li>
-            <img src="./images/icon-email.svg" alt="" />
-            <span> example@huddle.com</span>
-          </li>
-        </ul>
-
-        <ul class="footer-socials">
-          <li>
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-          </li>
-          <li>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-          </li>
-        </ul>
-        <p class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by
-          <a href="https://www.linkedin.com/in/hongduyen/">Duyen Nguyen</a>.
-        </p>
-      </div>
-    </footer>
+      </footer>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
