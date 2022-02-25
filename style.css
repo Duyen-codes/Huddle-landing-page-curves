@@ -228,11 +228,33 @@ footer .form-control {
 
 footer input[type="email"] {
   width: 90%;
-  padding: 1.7rem;
+  padding: 1.5rem;
   border-radius: 0.5rem;
   border: none;
   max-width: 350px;
+  outline: none;
+  font-size: 1.6rem;
+  position: relative;
 }
+
+footer input[type="email"]::before {
+  content: "check";
+  color: red;
+  position: absolute;
+  left: 0;
+}
+
+.form-input.error {
+  border: 2px solid var(--Light-Red);
+}
+
+/* .form-control::before {
+  content: "check";
+  color: red;
+  position: absolute;
+  left: 3rem;
+  top: 100%;
+} */
 
 .subscribe-btn {
   border-radius: 0.5rem;
@@ -325,5 +347,12 @@ footer input[type="email"] {
 
   footer form {
     order: 1;
+  }
+
+  footer .form-control {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 4rem;
+    justify-content: flex-start;
   }
 }
