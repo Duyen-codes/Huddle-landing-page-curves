@@ -20,8 +20,8 @@ html {
   --fw-openSans-600: 600;
   --fw-openSans-700: 700;
   --fw-Poppins-700: 700;
-  /* ## Colors */
 
+  /* ## Colors */
   /* ### Primary */
 
   --Pink: hsl(322, 100%, 66%);
@@ -67,11 +67,13 @@ h2 {
 p {
   font-family: var(--ff-openSans-400-600-700);
   font-weight: var(--fw-openSans-600);
+  font-size: max(1.8rem, 1.3vw);
 }
 
 button:hover {
   background-color: var(--Light-Pink);
 }
+
 header,
 main {
   text-align: center;
@@ -79,7 +81,7 @@ main {
 
 /* Header style starts */
 header {
-  padding: 2rem;
+  padding: 3rem 2rem;
 }
 
 .header-logo-icon {
@@ -116,7 +118,7 @@ nav {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: clamp(2.5rem, 2.5vw, 4.2rem);
 }
 
 .header-hero-text {
@@ -138,7 +140,7 @@ main {
 }
 
 h2 {
-  font-size: 2.2rem;
+  font-size: clamp(2.2rem, 2.2vw, 3.5rem);
   font-weight: var(--fw);
   margin-bottom: 2rem;
 }
@@ -282,35 +284,34 @@ footer h2 + p {
 }
 
 footer form {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: flex-end;
-  width: 100%;
+  overflow: hidden;
 }
 
-form input[type="email"] {
-  width: 90%;
+input[type="email"] {
+  width: 100%;
   padding: 1.5rem;
   border-radius: 0.5rem;
   border: none;
   max-width: 350px;
   outline: none;
   font-size: 1.6rem;
-  position: relative;
+  display: block;
 }
 
-form input.error {
+input[type="email"].error {
   border: 2px solid var(--Light-Red);
 }
 
-.email-error-msg {
-  color: var(--Light-Red);
-  font-size: 1.4rem;
-  display: none;
+form {
+  position: relative;
 }
 
-.email-error-msg.show {
+.email-error-msg {
+  color: red;
+  font-size: 1.6rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
   display: block;
 }
 
@@ -376,9 +377,9 @@ form input.error {
 
 /* Desktop  */
 @media screen and (min-width: 900px) {
-  h1 {
+  /* h1 {
     font-size: 4.2rem;
-  }
+  } */
 
   .grow-section,
   .user-section {
@@ -401,24 +402,20 @@ form input.error {
   .background-wrapper-grow::before {
     background-image: url("./images/bg-section-top-desktop-1.svg");
     height: 130px;
-    border: 1px solid red;
   }
 
   .background-wrapper-grow::after {
     height: 130px;
     background-image: url("./images/bg-section-bottom-desktop-1.svg");
-    border: 1px solid green;
   }
 
   .background-wrapper-user::before {
     background-image: url("./images/bg-section-top-desktop-2.svg");
-    border: 1px solid red;
     height: 130px;
   }
 
   .background-wrapper-user::after {
     background-image: url("./images/bg-section-bottom-desktop-2.svg");
-    border: 1px solid green;
     height: 130px;
   }
 
@@ -446,10 +443,13 @@ form input.error {
     order: 1;
   }
 
-  footer form {
+  /* footer form {
     display: flex;
     flex-flow: row nowrap;
-    gap: 4rem;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+  } */
+  input[type="email"] {
+    display: inline-block;
   }
 }

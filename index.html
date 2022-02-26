@@ -119,10 +119,20 @@
             newsletter. We’ll never send you spam or pass on your email address
           </p>
           <form class="newsletter-form">
-            <input type="email" class="form-input" />
+            <label for="email"
+              ><input
+                id="email"
+                type="email"
+                class="form-input error"
+                name="email"
+                placeholder="Email Address"
+                autocomplete="off"
+              />
+              <span class="email-error-msg">Check email</span>
+            </label>
             <button type="submit" class="subscribe-btn">Subscribe</button>
+            <!-- <span class="email-error-msg">Check your email please</span> -->
           </form>
-          <span class="email-error-msg">Check your email please</span>
         </div>
 
         <div class="footer-bottom">
