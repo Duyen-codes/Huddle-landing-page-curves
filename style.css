@@ -375,11 +375,8 @@ form {
 }
 
 /* Desktop  */
-@media screen and (min-width: 900px) {
-  /* h1 {
-    font-size: 4.2rem;
-  } */
 
+@media screen and (min-width: 900px) {
   .grow-section,
   .user-section {
     margin-top: 10rem;
@@ -442,12 +439,6 @@ form {
     order: 1;
   }
 
-  /* footer form {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-  } */
   input[type="email"] {
     display: inline-block;
   }
