@@ -267,7 +267,6 @@ footer {
   font-family: var(--ff-openSans-400-600-700);
   text-align: left;
   display: grid;
-  grid-template-columns: 1fr;
   gap: 10rem;
 }
 
@@ -283,19 +282,15 @@ footer h2 + p {
   margin: 2rem auto 4rem;
 }
 
-footer form {
-  overflow: hidden;
-}
-
 input[type="email"] {
-  width: 100%;
+  max-width: 350px;
+  width: 90%;
   padding: 1.5rem;
   border-radius: 0.5rem;
   border: none;
-  max-width: 350px;
   outline: none;
   font-size: 1.6rem;
-  display: block;
+  margin-right: 2rem;
 }
 
 input[type="email"].error {
@@ -307,11 +302,15 @@ form {
 }
 
 .email-error-msg {
+  display: none;
+}
+
+.show {
   color: red;
   font-size: 1.6rem;
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -30px;
   display: block;
 }
 
