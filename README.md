@@ -2,19 +2,16 @@
 
 ![Header/intro section for the Huddle landing page with curved sections](./design/desktop-preview.jpg)
 
-## Overview
+### Links
 
-### The challenge
+- Live Site URL: [https://huddle-landing-page-curves.vercel.app](https://huddle-landing-page-curves.vercel.app)
+
+## Overview
 
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
 - See hover states for all interactive elements on the page
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
 
@@ -26,3 +23,4 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - Vanilla JavaScript
+- Responsive design
